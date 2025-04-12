@@ -21,6 +21,7 @@ app.UseAuthorization();
 app.MapStaticAssets();
 
 app.UseCookiePolicy();
+app.UseCookiePolicy();
 
 app.MapControllerRoute(
     name: "default",
