@@ -14,6 +14,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseAuthorization();
@@ -22,6 +23,7 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
+app.UseCookiePolicy();
 app.UseCookiePolicy();
 
 app.MapControllerRoute(
